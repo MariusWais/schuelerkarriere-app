@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="100%">
+        <ImageView
+            app:layout_widthPercent="22%"
+            app:layout_heightPercent="30%"
+            android:src="@drawable/tinder_nope"
+            android:layout_marginRight="33dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginTop="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

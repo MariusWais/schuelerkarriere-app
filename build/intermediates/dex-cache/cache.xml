@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Development\App Development\Android\AppV1.4.2\placeholderview\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d86e0390adf3060b5ab83d4c6d50901ea45ea84">
+        <dex dex="C:\Development\App Development\Android\AppV1.4.2\app\build\intermediates\pre-dexed\debug\classes_7d7cfb52db49ea57481f222e986d5e54d2a894a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Development\App Development\Android\AppV1.4.1\placeholderview\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d86e0390adf3060b5ab83d4c6d50901ea45ea84">
+        <dex dex="C:\Development\App Development\Android\AppV1.4.1\app\build\intermediates\pre-dexed\debug\classes_e51683f7f2c985a6ab639e804d02545f42f4abf7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Development\App Development\Android\AppV1.4.4\placeholderview\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d86e0390adf3060b5ab83d4c6d50901ea45ea84">
+        <dex dex="C:\Development\App Development\Android\AppV1.4.4\app\build\intermediates\pre-dexed\debug\classes_48ca18ec656d2b6544fc1865ead7c03c74d976f7.jar" />
+    </item>
+
+</items>

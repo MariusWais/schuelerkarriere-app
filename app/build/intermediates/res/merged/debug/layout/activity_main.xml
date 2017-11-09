@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+      <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:layout_height="match_parent">
+      </WebView>
+
+        <WebView
+            android:id="@+id/urlWebView"
+            android:layout_width="1px"
+            android:layout_gravity="top"
+            android:layout_height="1px">
+        </WebView>
+        <Button
+            android:id="@+id/hideWebView"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/uncheck_empty"
+            app:layout_marginLeftPercent="90%"
+            app:layout_marginTopPercent="15%"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <LinearLayout android:layout_alignParentBottom="true" android:layout_width="match_parent"> <include layout="@layout/toolbar_layout"></include></LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="70dp">
+        <include layout="@layout/logobar_layout"></include>
+    </RelativeLayout>
+
+    <com.mindorks.placeholderview.SwipePlaceHolderView
+        android:id="@+id/swipeView"
+        android:layout_weight="2"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+    </com.mindorks.placeholderview.SwipePlaceHolderView>
+    <android.support.percent.PercentRelativeLayout
+        app:layout_widthPercent="100%"
+        android:id="@+id/btnLayout"
+        app:layout_heightPercent="15%"
+        android:layout_weight="1"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/rejectBtn"
+            android:layout_width="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="50dp"
+            android:background="@drawable/uncheck_filled"/>
+
+        <ImageButton
+            android:id="@+id/descBtn"
+            app:layout_marginLeftPercent="15%"
+            android:background="@drawable/desc_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageButton
+            android:id="@+id/acceptBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_marginLeftPercent="30%"
+            android:background="@drawable/check_filled2" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>
+
+
+

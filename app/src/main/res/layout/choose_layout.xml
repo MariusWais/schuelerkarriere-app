@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        android:id="@+id/chooseCo"
+        android:layout_width="220dp"
+        android:layout_height="62dp"
+        android:text="Login"
+        android:onClick="getToUserLogin"
+        android:layout_marginBottom="117dp"
+        android:background="@drawable/shape_empty_big"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnring"
+        android:layout_alignEnd="@+id/btnring" />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:text="Du bist bereits angemeldet?"
+        android:clickable="true"
+        android:onClick="getToUserLogin"
+        android:layout_above="@+id/chooseCo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/chooseUser"
+        android:layout_width="220dp"
+        android:layout_height="62dp"
+        android:text="Sign in"
+        android:background="@drawable/shape_filled_big"
+        android:textColor="@color/colorPrimary"
+        android:onClick="getToUserReg"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/btnring"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sklogo"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/chooseUser"
+        android:layout_alignStart="@+id/chooseUser" />
+
+
+</RelativeLayout>

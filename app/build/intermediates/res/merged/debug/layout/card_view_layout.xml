@@ -1,0 +1,195 @@
+
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        app:layout_widthPercent="100%"
+        app:layout_marginTopPercent="6%"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="100%">
+
+
+        <android.support.v7.widget.CardView
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="90%"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="top"
+                android:layout_height="match_parent">
+                <android.support.percent.PercentRelativeLayout
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="20%">
+
+                </android.support.percent.PercentRelativeLayout>
+                <android.support.percent.PercentRelativeLayout
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="80%"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        app:layout_widthPercent="80%"
+                        app:layout_heightPercent="32%"
+                        ></ImageView>
+
+                    <TextView
+                        android:id="@+id/typeTxt"
+                        app:layout_widthPercent="80%"
+                        app:layout_heightPercent="16%"
+                        app:layout_marginTopPercent="42%"
+                        android:gravity="center"
+                        android:text="type"
+                        android:maxLines="3"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/comTxt"
+                        app:layout_widthPercent="80%"
+                        app:layout_heightPercent="8%"
+                        app:layout_marginTopPercent="60%"
+                        android:gravity="center"
+                        android:text="company"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+
+
+                   <!-- <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        app:layout_widthPercent="44%"
+                        app:layout_heightPercent="26%"
+                        android:gravity="center_horizontal"
+                        app:layout_marginTopPercent="12%"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/profileImageView"
+                        app:riv_corner_radius="10dip"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="#333333"
+                         />-->
+
+                   <ImageView
+                        android:id="@+id/profileImageView"
+                        app:layout_widthPercent="26%"
+                        app:layout_heightPercent="26%"
+                        android:background="@drawable/image_border"
+                        android:gravity="center_horizontal"
+                        app:layout_marginTopPercent="12%"
+                        android:layout_centerHorizontal="true" />
+
+
+                    <TextView
+                        android:id="@+id/descTxt"
+                        app:layout_widthPercent="32%"
+                        app:layout_heightPercent="6%"
+                        app:layout_marginTopPercent="72%"
+                        android:text="jobkind"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+
+
+
+                </android.support.percent.PercentRelativeLayout>
+                <android.support.percent.PercentRelativeLayout
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="30%"
+                    app:layout_marginTopPercent="68%">
+
+
+
+                    <android.support.percent.PercentRelativeLayout
+                        app:layout_widthPercent="100%"
+                        android:id="@+id/plc"
+                        android:layout_centerHorizontal="true"
+                        app:layout_heightPercent="100%">
+                        <ImageView
+                            app:layout_widthPercent="15%"
+                            app:layout_heightPercent="40%"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/place" />
+
+                        <TextView
+                            android:id="@+id/placeTxt"
+                            app:layout_widthPercent="100%"
+                            app:layout_heightPercent="40%"
+                            app:layout_marginTopPercent="28%"
+                            android:text="place"
+                            android:gravity="center"
+                            android:textSize="11dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="normal" />
+
+                    </android.support.percent.PercentRelativeLayout>
+                    <!--<android.support.percent.PercentRelativeLayout
+                        app:layout_widthPercent="33%"
+                        android:layout_toRightOf="@id/plc"
+                        app:layout_heightPercent="100%">
+
+                    <ImageView
+                        app:layout_widthPercent="20%"
+                        app:layout_heightPercent="40%"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/euro" />
+
+                    <TextView
+                        android:id="@+id/salTxt"
+                        app:layout_widthPercent="100%"
+                        app:layout_heightPercent="40%"
+                        app:layout_marginTopPercent="35%"
+                        android:text="salary"
+                        android:gravity="center"
+
+
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="11dp"
+                        android:textStyle="normal" />
+                </android.support.percent.PercentRelativeLayout>
+
+                  <android.support.percent.PercentRelativeLayout
+                        app:layout_widthPercent="33%"
+                        app:layout_heightPercent="100%">
+                        <ImageView
+                            app:layout_widthPercent="20%"
+                            android:layout_centerHorizontal="true"
+                            app:layout_heightPercent="40%"
+                            android:src="@drawable/clock_icon" />
+                        <TextView
+                            android:id="@+id/durTxt"
+                            app:layout_widthPercent="100%"
+                            app:layout_heightPercent="40%"
+                            android:text="duration"
+                            android:gravity="center"
+                            app:layout_marginTopPercent="35%"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="11dp"
+                            android:textStyle="normal" />
+                </android.support.percent.PercentRelativeLayout>-->
+
+                </android.support.percent.PercentRelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentFrameLayout>

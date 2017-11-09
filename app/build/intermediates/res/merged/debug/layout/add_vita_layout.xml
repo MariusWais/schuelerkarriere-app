@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_layout"></include>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:transcriptMode="alwaysScroll"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        app:layout_widthPercent="50%"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sklogo"
+        android:id="@+id/imageView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Deine persönlichen Daten" />
+    <EditText
+        android:id="@+id/add_name"
+        app:layout_widthPercent="75%"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:hint="Name"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        app:layout_marginTopPercent="22%"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_age"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:maxLength="2"
+        android:backgroundTint="@color/colorWhite"
+        android:textSize="12dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        app:layout_marginTopPercent="28%"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="Alter" />
+
+
+    <EditText
+        android:id="@+id/add_mail"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/colorWhite"
+        app:layout_marginTopPercent="34%"
+        android:textSize="12dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:hint="Email-Adresse"
+        android:inputType="textWebEmailAddress"
+   />
+
+    <EditText
+        android:id="@+id/add_phone"
+        app:layout_widthPercent="75%"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_marginTopPercent="40%"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
+        android:hint="Telefonnummer"
+        android:textSize="12dp"
+        android:inputType="phone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginTop="480dp"
+        android:text="Ausbildung" />
+    <EditText
+        android:id="@+id/add_grad"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/colorWhite"
+        app:layout_marginTopPercent="50%"
+        android:textSize="12dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:hint="Abschluss"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_int"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/colorWhite"
+        android:textSize="12dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        app:layout_marginTopPercent="56%"
+        android:hint="Praktika"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/add_exp"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/colorWhite"
+        android:textSize="12dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        app:layout_marginTopPercent="62%"
+        android:layout_centerHorizontal="true"
+        android:hint="Berufserfahrung"
+        android:inputType="textMultiLine" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="68%"
+        android:text="Kenntnisse" />
+
+    <EditText
+        android:id="@+id/add_lang"
+        app:layout_widthPercent="75%"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="72%"
+        android:backgroundTint="@color/colorWhite"
+        android:ems="10"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:hint="Sprachen"
+        android:textSize="12dp"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/add_it"
+        app:layout_widthPercent="75%"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="78%"
+        android:backgroundTint="@color/colorWhite"
+        android:ems="10"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:hint="IT-Kentnisse"
+        android:textSize="12dp"
+        android:inputType="phone"
+        />
+    <EditText
+        android:id="@+id/add_oth"
+        app:layout_widthPercent="75%"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorWhite"
+        app:layout_marginTopPercent="84%"
+        android:ems="10"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:hint="Sonstige"
+        android:textSize="12dp"
+        android:inputType="phone"
+        />
+
+
+    <Button
+        android:id="@+id/send_vita"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:text="Zu Profil hinzufügen"
+        android:background="@drawable/shape_filled_big"
+        android:onClick="addVita"
+        android:textAllCaps="false"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="950dp"
+
+       />
+    </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Company Register"/>
+    <EditText
+        android:id="@+id/co_reg_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/co_reg_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/co_reg_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="CoReg"/>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"
+        android:text="Add your Ad" />
+
+    <EditText
+        android:id="@+id/add_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Job Bezeichnung"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Job Beschreibung"
+        />
+
+    <EditText
+        android:id="@+id/add_comp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minEms="3"
+        android:hint="Unternehmen"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_dur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dauer"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_sal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Gehalt"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ort"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="URL des Firmenlogos"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/send_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="addAd"/>
+</LinearLayout>

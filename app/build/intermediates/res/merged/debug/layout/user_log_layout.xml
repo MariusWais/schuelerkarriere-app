@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorBlue">
+
+
+    <EditText
+        android:id="@+id/user_log_mail"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="17dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_marginTopPercent="34%"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_widthPercent="50%"
+        app:layout_marginTopPercent="12%"
+        android:adjustViewBounds = "true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sklogo"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/user_log_pw"
+        app:layout_widthPercent="75%"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16dp"
+        android:backgroundTint="@color/colorWhite"
+        android:hint="Passwort"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/colorWhite"
+        android:inputType="textPassword"
+        app:layout_marginTopPercent="46%"
+        android:layout_alignLeft="@+id/user_log_mail"
+        android:layout_alignStart="@+id/user_log_mail" />
+
+    <Button
+        android:id="@+id/button2"
+        app:layout_widthPercent="75%"
+        android:layout_height="35dp"
+        android:onClick="UserLog"
+        android:text="Melde dich an!"
+        android:textSize="12dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="28dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/shape_filled_big"
+        app:layout_marginTopPercent="63%"
+        android:layout_alignLeft="@+id/user_log_pw"
+        android:layout_alignStart="@+id/user_log_pw" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorWhite"
+        app:layout_marginTopPercent="80%"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:clickable="true"
+        android:onClick="getToUserReg"
+        android:text="Du hast noch keinen Account?"
+        app:layout_marginTopPercent="70%"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        app:layout_widthPercent="10%"
+        app:layout_marginTopPercent="78%"
+        app:layout_marginLeftPercent="28%"
+        android:adjustViewBounds = "true"
+        android:onClick="facebook"
+        android:src="@drawable/facebook"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        app:layout_widthPercent="10%"
+        app:layout_marginTopPercent="78%"
+        android:onClick="twitter"
+        app:layout_marginLeftPercent="48%"
+        android:adjustViewBounds = "true"
+        android:src="@drawable/twitter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        app:layout_widthPercent="10%"
+        app:layout_marginTopPercent="78%"
+        android:onClick="instagram"
+        app:layout_marginLeftPercent="62%"
+        android:adjustViewBounds = "true"
+        android:src="@drawable/instagram" />
+</android.support.percent.PercentRelativeLayout>

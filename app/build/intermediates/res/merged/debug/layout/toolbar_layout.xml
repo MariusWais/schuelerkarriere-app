@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/toolbar2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="1"
+    android:layout_alignParentBottom="true"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="@color/colorBlue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv1"
+                app:layout_widthPercent="25%"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:text="Jobs"/>
+            <TextView
+                app:layout_widthPercent="25%"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/tv1"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="Profil"/>
+            <TextView
+                app:layout_widthPercent="25%"
+                app:layout_marginLeftPercent="25%"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:text="Vita"/>
+            <TextView
+                app:layout_widthPercent="25%"
+                app:layout_marginLeftPercent="50%"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:text="Info"/>
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/icons"
+            android:layout_height="45dp">
+
+                <android.support.percent.PercentRelativeLayout
+                    app:layout_widthPercent="25%"
+                    android:gravity="center"
+                    android:layout_height="45dp">
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:onClick="getToJobs"
+                        android:background="@drawable/explore_icon"
+                        android:layout_height="40dp" />
+                    </android.support.percent.PercentRelativeLayout>
+
+                    <android.support.percent.PercentRelativeLayout
+                        app:layout_widthPercent="25%"
+                        app:layout_marginLeftPercent="25%"
+                        android:gravity="center"
+                        android:layout_height="45dp">
+                        <ImageButton
+                            android:id="@+id/vitaButton"
+                            android:layout_width="40dp"
+                            android:onClick="getToVita"
+                            android:background="@drawable/vita_icon"
+                            android:layout_height="40dp" />
+                    </android.support.percent.PercentRelativeLayout>
+
+                    <android.support.percent.PercentRelativeLayout
+                        app:layout_widthPercent="25%"
+                        app:layout_marginLeftPercent="50%"
+                        android:gravity="center"
+                        android:layout_height="45dp">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:id="@+id/info"
+                            android:background="@drawable/info_icon"
+                            android:layout_height="40dp" />
+                    </android.support.percent.PercentRelativeLayout>
+
+                    <android.support.percent.PercentRelativeLayout
+                        app:layout_widthPercent="25%"
+                        app:layout_marginLeftPercent="75%"
+                        android:gravity="center"
+                        android:layout_height="45dp">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:onClick="getToLogin"
+                            android:background="@drawable/logout_icon"
+                            android:layout_height="40dp" />
+                    </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
